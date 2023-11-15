@@ -4,6 +4,7 @@
 #include <windows.h>
 #pragma warning (disable : 4996)
 
+
 typedef struct {
 	int value;
 	struct tree* left;
