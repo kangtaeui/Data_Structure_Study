@@ -25,3 +25,21 @@ void sort_bubble(int* arr, int size)
 	}
 
 }
+
+int main()
+{
+	int size;
+	int arr[20];
+	printf("선택정렬을 시작하겠습니다.\n");
+	printf("배열의 size를 입력해주세요 :");
+	scanf("%d", &size);
+	printf("\n배열의 요소들을 입력해주세요 :\n");
+	for (int i = 0; i < size; i++)
+	{
+		scanf("%d", &arr[i]);
+	}
+	sort_bubble(arr, size);
+	
+
+	return 0;
+}
