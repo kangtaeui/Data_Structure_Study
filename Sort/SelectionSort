@@ -1,0 +1,24 @@
+void sort_select(int* arr, int size)
+{
+	int min_idx=0;
+	int temp;
+	for (int i = 0; i < size - 1; i++)
+	{
+		min_idx = i;
+		for (int j = i + 1; j < size; j++)
+		{
+			if (arr[min_idx] > arr[j])
+			{
+				min_idx = j;	//제일 작은값의 항을 min_idx에 저장하고 밑에 arr[i]에 차례차례 증가할수록 저장
+			}
+		}
+		temp = arr[i];
+		arr[i] = arr[min_idx];
+		arr[min_idx] = temp;
+	}
+	for (int i = 0; i < size; i++)
+	{
+		printf("%d", arr[i]);
+		Sleep(500);
+	}
+}
